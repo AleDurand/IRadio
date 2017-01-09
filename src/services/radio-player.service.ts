@@ -18,7 +18,7 @@ export class RadioPlayerService {
 				this.stream.addEventListener('playing', () => resolve(true));
 				this.stream.addEventListener('error', () => reject(false));
 			} else {
-				resolve(false);
+				reject(false);
 			}
 		});
 	};
